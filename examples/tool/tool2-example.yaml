@@ -1,0 +1,24 @@
+tool_name: tool2_example
+geometric_properties:
+  size:
+    - x: 0.2 # m
+    - y: 0.1
+    - z: 0.1
+  target_offset:
+    - x: 0.05 # m
+    - y: 0.05
+    - z: 0.0
+    - a: 1.57 # rad
+    - b: 0.0
+    - c: 0.0
+production_properties:
+  - velocities:
+      - x_axis:
+          min_val: 0.001 # m/s
+          max_val: 0.1
+      - y_axis:
+          min_val: 0.001
+          max_val: 0.1
+      - z_axis:
+          min_val: 0.0
+          max_val: 0.0

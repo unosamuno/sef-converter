@@ -1,0 +1,8 @@
+textile_name: example_textile
+properties:
+  type: silk
+  size:
+    - h: 0.5 # m
+    - w: 0.5 # m
+    - t: 0.002 # m
+  laser_allow: false

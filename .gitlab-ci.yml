@@ -1,0 +1,27 @@
+image: python:3.6
+
+variables:
+  PIP_CACHE_DIR: "$CI_PROJECT_DIR/.cache/pip"
+
+cache:
+  paths:
+    - .cache/pip
+    - venv/
+
+before_script:
+  - python -V  # Print out python version for debugging
+  - pip install virtualenv
+  - virtualenv venv
+  - source venv/bin/activate
+  - pip install -r requirements.txt
+
+lint:
+  script:
+    - pip install flake8
+    - flake8 --max-line-length=120 sef_converter/*.py
+
+test:
+  script:
+    - echo "Running tests"
+    - apt-get update
+    - python -m unittest discover -s "./tests/"

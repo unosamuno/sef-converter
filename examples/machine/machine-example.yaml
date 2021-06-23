@@ -1,0 +1,24 @@
+machine_name: example_machine
+axes:
+  - x_axis:
+      - limits:
+          min_val: 0.0 # m
+          max_val: 1.0
+      - velocities:
+          min_vel: 0.01 # m/s
+          max_vel: 0.5
+  - y_axis:
+      - limits:
+          min_val: 0.0 # m
+          max_val: 0.5
+      - velocities:
+          min_vel: 0.01 # m/s
+          max_vel: 0.5
+  - z_axis:
+      - limits:
+          min_val: 0.0 # m
+          max_val: 0.1
+      - velocities:
+          min_vel: 0.01 # m/s
+          max_vel: 0.1
+
