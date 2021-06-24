@@ -2,21 +2,16 @@ import numpy as np
 import pandas as pd
 import yaml
 import matplotlib.pyplot as plt
+from sef_converter.parser.svg_parser import SvgParser
 
+svg_parser = SvgParser(svg_path="examples/svg/2-layer.svg")
+objects = svg_parser.generate_objects()
 
-# This is a sample Python script.
+fig, ax = plt.subplots()
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+for my_object in objects:
+    patch = my_object.get_plt_object()
+    ax.add_patch(patch)
 
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+plt.axis("equal")
+plt.show()
