@@ -2,7 +2,7 @@
 
 sandbox for SEF project at HSLU
 
-[[_TOC__]]
+[[__TOC__]]
 
 ## Installation
 
