@@ -17,8 +17,9 @@ class SvgRect(object):
         self._rot_angle = angle
 
     def get_plt_object(self) -> patches.Rectangle:
-        return patches.Rectangle((self._x, self._y), self._width, self._height,
-                                 # transform=Affine2D().rotate_around(x=0, y=0, theta=self._rot_angle),
+        return patches.Rectangle((self._x * np.cos(self._rot_angle) - self._y * np.sin(self._rot_angle),
+                                  self._x * np.sin(self._rot_angle) + self._y * np.cos(self._rot_angle)), self._width,
+                                 self._height, angle=0,
                                  linewidth=1, fill=False)
 
 
