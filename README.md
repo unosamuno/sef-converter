@@ -1,8 +1,14 @@
+[![test and lint](https://gitlab.switch.ch/rehrler/sef-converter/badges/master/pipeline.svg)](https://gitlab.switch.ch/rehrler/sef-converter/-/commits/master)
+
 # SEF Converter
 
 sandbox for SEF project at HSLU
 
-[[__TOC__]]
+[[_TOC_]]
+
+## Documentation
+
+see [docs](docs/)
 
 ## Installation
 
@@ -21,8 +27,8 @@ sandbox for SEF project at HSLU
 
 ### Axis
 
-- z axis points in the direction of gravity (towards floor)
-- x and y axis are inline with x and y axis of machine (see [machine parameters](examples/machine/machine-example.yaml))
+- `z` axis points in the direction of gravity (towards floor)
+- `x` and `y` axis are inline with `x` and `y` axis of machine (see [machine parameters](examples/machine/machine-example.yaml))
 
 ### General rules
 - Test your code before pushing it to the repository
