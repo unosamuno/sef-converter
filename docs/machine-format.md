@@ -1,4 +1,4 @@
-# Description of machine format
+0ma# Description of machine format
 
 A SEF machine consists of the following parameters and definitions:
 

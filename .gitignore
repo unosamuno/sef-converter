@@ -2,3 +2,4 @@
 .idea/
 env/
 *.db
+sef_converter/database/ibm-credentials.env
